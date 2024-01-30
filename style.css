@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+}
+
+h1, h2 {
+    font-family: Playfair, serif;
+}
+
+header, footer {
+    background-color: #2d2d54;
+    color: #ffffff;
+}
+
