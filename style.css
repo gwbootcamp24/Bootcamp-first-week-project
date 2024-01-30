@@ -6,12 +6,64 @@
 
 body {
     font-family: Roboto, sans-serif;
-    font-size: 13px;
-}
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.43em;
+    color: #403e4b;
 
+}
 h1, h2 {
     font-family: Playfair, serif;
+    line-height: 1.43em;
 }
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+header, main, footer{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+a.cta
+{
+  padding: 8px 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  border: 1px solid #68dacd;
+  color: #68dacd;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+/* h1, h2
+{
+  font-family: Playfair, serif;
+  font-weight: 900;
+  font-weight: 700;
+  font-weight: 500;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 1.2;
+} */
+
 
 header, footer {
     background-color: #2d2d54;
@@ -20,11 +72,47 @@ header, footer {
 
 section{
     padding: 70px 27px;
+}
+section.article{
     display: flex;
-    justify-content: ;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 20px;
 }
 
-section.article{
+section > .image:first-child{
+    max-width: 380px;
+
+
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex: 2 3 300px;
+
+
+}
+section > .image:last-child{
     
+}
+section > .text:first-child{
+    
+}
+section > .text:last-child{
+      flex-shrink: 4;
+      flex-grow: 3;
+      width: 20%;
+      max-width: 57%;
+      min-width: 50%;
+      flex-basis: 800px;
+}
+
+section .image img{
+  display: inline-block;
+  max-width: 235px;
+  align-self: flex-start;
+  flex-shrink: 4;
+  width: 100%;
 }
 
