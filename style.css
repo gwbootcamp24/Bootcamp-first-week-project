@@ -18,3 +18,13 @@ header, footer {
     color: #ffffff;
 }
 
+section{
+    padding: 70px 27px;
+    display: flex;
+    justify-content: ;
+}
+
+section.article{
+    
+}
+
