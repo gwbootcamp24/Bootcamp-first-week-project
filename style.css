@@ -37,20 +37,42 @@ header, main, footer{
 }
 
 /* @media only screen and (min-width: 320px), (orientation: landscape) {
-    /* CSS rules */
-  } */
+    /* CSS rules  
+  } 
+  
+  
+  
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+
+  
+  
+  
+  */
 
 
 /* Socials */
+
+.socials{
+    display: flex;
+    max-width: 500px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 2px;
+    padding-top: 27px;
+}
+
 .socials > li{
     width: 40px;
     height: 40px;
-    padding: 5px 5px;
-    border: 1px solid #ffffff;
+    padding: 0px;
+    border-radius: 50%;
 }
 
 .socials .facebook{
-    background-image: url;
 }
 
 a.cta
@@ -206,15 +228,14 @@ footer{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    
 }
 
 footer section{
     display: flex;
     column-gap: 20px;
     padding-top: 70px;
-    padding-bottom: 60px;
-    
+    padding-bottom: 65px;
+    flex-wrap: wrap;
 }
 
 footer .logo{
@@ -222,19 +243,23 @@ footer .logo{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 footer .logo span{
     font-size: 32px;
     font-weight: 100;
     color: #5dbacb;
+    margin-left: 10px;
+    display: inline-block;
 }
 
 footer > section > div {
-    max-width: 30%;
+    flex: 4 1 25%;
+}
 
-    flex: 1 1 30%;
+footer > section > div:last-child {
+    flex: 1 1 300px;
 }
 
 footer ul li{
@@ -271,7 +296,7 @@ footer h2{
     font-family: Roboto, sans-serif;
     font-weight: 600;
     font-size: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     margin-top: 15px;
 }
 
@@ -310,7 +335,24 @@ form.nlSubscribe{
     column-gap: 10px;
 }
 
-
-
+footer a{
+    color: #ffffff;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+.subfooter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.subfooter .gtc{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    font-weight: 400;
+}
 
 
