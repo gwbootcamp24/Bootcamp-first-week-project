@@ -26,6 +26,7 @@ h1 {
 h2 {
     font-weight: 700;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 p{
@@ -355,4 +356,35 @@ footer a:hover{
     font-weight: 400;
 }
 
+
+section.contactForm {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 80px;
+}
+
+section.contactForm > div{
+    flex: 1 1 250px;
+}
+
+section.contactForm .clientLogos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: minmax(30px, 1fr); 
+    grid-gap: 15px;
+}
+
+section.contactForm .clientLogos img{
+    margin: auto;
+}
+
+.contactForm input, .contactForm textarea{
+    padding: 10px 15px;
+    width: 100%;    
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+    font-size: 15px;
+}
 
