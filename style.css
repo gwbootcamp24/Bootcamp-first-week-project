@@ -119,6 +119,71 @@ section .image img{
   width: 100%;
 }
 
+.expertise > .grid{
+    /* border: 2px blue solid; */
+    background-color: #ebebeb;
+    /* width: 15em;
+    height: 13em; */
+    display: grid;
+    grid-gap: 1.5px;
+    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.expertise .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  /* border-radius: 5px;
+  border: 2px dodgerblue solid; */
+  }
+
+.expertise h3 {
+    margin-bottom: 0.5em;
+} 
+
+.expertise img{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 50px;
+
+}
+
+.expertise p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.expertise img.screen{
+    /* width: 49px; */
+    width: 3em;
+}
+
+.expertise img.pen{
+    /* width: 50px; */
+    height: 3em;
+}
+
+.expertise img.mobile{
+    height: 3em;
+    width: 3em;
+}
+
+.expertise img.graph{
+    width: 3em;
+}
+
+.expertise img.gameboy{
+    height: 3em;
+}
+
+.expertise img.heart{
+    width: 3em;
+}
+
 
 footer{
     background-image: url(images/bgk-footer.png);
