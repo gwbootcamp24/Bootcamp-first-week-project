@@ -185,7 +185,7 @@ section .image img{
 } 
 
 .expertise img{
-    margin-top: 1em;
+    margin-top: 2em;
     margin-bottom: 1em;
     width: 50px;
 
@@ -194,11 +194,14 @@ section .image img{
 .expertise p {
     margin-top: 1em;
     margin-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 .expertise img.screen{
     /* width: 49px; */
-    width: 3em;
+    /* width: 3em; */
+    height: 3em;
 }
 
 .expertise img.pen{
@@ -212,7 +215,7 @@ section .image img{
 }
 
 .expertise img.graph{
-    width: 3em;
+    height: 3em;
 }
 
 .expertise img.gameboy{
@@ -220,7 +223,29 @@ section .image img{
 }
 
 .expertise img.heart{
-    width: 3em;
+    height: 3em;
+}
+
+.expertise h2{
+    text-align: center;
+    margin-bottom: -0.75em;
+}
+
+.expertise p{
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.expertise > p{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.expertise hr{
+    width: 5em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
