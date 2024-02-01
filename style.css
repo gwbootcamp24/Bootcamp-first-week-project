@@ -158,6 +158,14 @@ section .image img{
   width: 100%;
 }
 
+section.video-banner{
+    max-width: 100%;
+    text-align: center;    
+    background-image: url(images/bgk-middle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .expertise > .grid{
     /* border: 2px blue solid; */
     background-color: #ebebeb;
@@ -248,6 +256,51 @@ section .image img{
     margin-right: auto;
 }
 
+section.team{
+    max-width: 100%;
+    text-align: center;    
+    background-image: url(images/bgk-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* section.team > h2{
+    ;
+}
+
+section.team > p{
+    ;
+} */
+
+.team-tiles-item {
+    flex: 1 1 220px;
+    width: 220px;
+
+    border: 1px solid #68dacd;
+    color: #68dacd;
+}
+
+section.team .team-tiles{
+    max-width: 1000px;
+    display: inline-flex;
+    column-gap: 1em;
+}
+
+.team-tiles-items {
+    flex-direction: row;  
+    
+}
+
+a.hiring{
+    padding: 8px 15px;
+    
+    text-transform: uppercase;
+    border: 1px solid #68dacd;
+    color: #68dacd;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+}
 
 footer{
     background-image: url(images/bgk-footer.png);
