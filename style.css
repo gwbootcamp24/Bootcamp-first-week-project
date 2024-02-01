@@ -159,6 +159,7 @@ section .image img{
 }
 
 section.video-banner{
+    aspect-ratio: 3 / 1;
     max-width: 100%;
     text-align: center;    
     background-image: url(images/bgk-middle.png);
@@ -257,6 +258,7 @@ section.video-banner{
 }
 
 section.team{
+    aspect-ratio: 3 / 1;
     max-width: 100%;
     text-align: center;    
     background-image: url(images/bgk-header.png);
