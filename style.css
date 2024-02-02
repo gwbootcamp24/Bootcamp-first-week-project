@@ -1,3 +1,8 @@
+:root{
+    --page-width: 950px;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +25,7 @@ h1, h2 {
 h1 {
     font-weight: 700;
     margin-bottom: 20px;
-
+    font-size: 35px;
 }
 
 h2 {
@@ -106,7 +111,7 @@ header, footer {
 }
 
 section, nav{
-    max-width: 1000px;
+    max-width: var(--page-width);
     margin-left: auto;
     margin-right: auto;
 }
@@ -138,7 +143,7 @@ header .nav{
 header .nav ul{
     display: inline-flex;
     list-style-type: none;
-    column-gap: 22px;
+    column-gap: 6px;
     font-weight: 600;
     font-size: 13px;
 }
@@ -173,7 +178,9 @@ header{
 
 header section{
     text-align: center;
+    padding: 140px 27px 200px 27px;
 }
+
 
 header h1::after{
     content: ' ';
@@ -190,7 +197,10 @@ header h1 {
 }
 
 header section > p {
-    padding-top: 20px;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding: 25px 50px 30px;
 }
 
 section.article{
@@ -364,12 +374,13 @@ section.team p{
     margin-bottom: 5em;
     border: 1px solid #7a7f7f;
     color: #ffffff;
-    max-width: 46%;
+    max-width: 32%;
+    flex-direction: row;  
 }
 
 
 section.team .team-tiles{
-    max-width: 1000px;
+    max-width: var(--page-width);
     display: inline-flex;
     column-gap: 1em;
     width: 100%;
@@ -377,10 +388,6 @@ section.team .team-tiles{
 }
 
 
-.team-tiles-items {
-    flex-direction: row;  
-    
-}
 
 .team-tiles-item img{
     padding: .25em 0.25em 0.5em 0.25em;
@@ -554,6 +561,7 @@ section.contactForm {
     justify-content: space-between;
     flex-wrap: wrap;
     column-gap: 80px;
+    row-gap: 80px;
 }
 
 section.contactForm > div{
@@ -579,59 +587,6 @@ section.contactForm .clientLogos img{
     border: 1px solid #e5e5e5;
     font-size: 15px;
 }
-
-@media screen and(max-width: 600px){.team-tiles-item
-    {
-      flex: 1 1 50%;
-      width: 220px;
-      border: 1px solid #68dacd;
-      color: #68dacd;
-      max-width: 46%;
-    }}
-
-
-
-
-@media screen and (max-width: 600px) {
-    
-    section.article{
-        flex-direction: column;
-        align-items: center;
-    }
-    section.article > .image:first-child{
-        flex-basis: 100%;
-    }
-    section.article > .text:last-child{
-        width: 100%;
-        max-width: inherit;
-        margin-top: 30px;
-        flex-basis: 100%;
-    }
-    
-
-    section.contactForm .clientLogos
-    {
-        grid-template-columns: 1fr;
-        grid-auto-rows: minmax(110px, 1fr);
-        grid-gap: 30px;
-    }
-
-
-    section.contactForm > div{
-        text-align: center;    
-    }
-
-    .expertise > .grid
-    {
-      grid-template-columns: 1fr ;
-      grid-auto-rows: minmax(110px, 1fr);
-    }
-
-
-
-
-}
-
 
 
 
@@ -690,7 +645,7 @@ header{
 }
 
 .hero{
-    max-width: 1000px;
+    max-width: var(--page-width);
     margin-left: auto;
     margin-right: auto;
     padding-top: 80px;
@@ -715,16 +670,135 @@ header{
 }
 
 .watchourstory{
-    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 550px;
     background-image: url(images/bgk-middle.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
-
+.watchourstory div
+{
+  text-align: center;
+}
+.watchourstory p
+{
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;;
+}
 .play{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    
+
+    .expertise > .grid
+    {
+      grid-template-columns: 1fr  1fr ;
+      grid-auto-rows: minmax(110px, 1fr);
+    }
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    header section{
+        text-align: center;
+        padding: 40px 27px 50px 27px;
+    }
+
+
+    .watchourstory
+    {
+      min-height: 400px;
+    }
+
+    header section > p{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .team-tiles-item
+    {
+      flex: 1 1 50%;
+      width: 220px;
+      border: 1px solid #68dacd;
+      color: #68dacd;
+      max-width: 47%;
+    }
+
+    section.article{
+        flex-direction: column;
+        align-items: center;
+    }
+    section.article > .image:first-child{
+        flex-basis: 100%;
+    }
+    section.article > .text:last-child{
+        width: 100%;
+        max-width: inherit;
+        margin-top: 30px;
+        flex-basis: 100%;
+    }
+    
+
+    section.contactForm .clientLogos
+    {
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(110px, 1fr);
+        grid-gap: 30px;
+    }
+
+
+    section.contactForm > div{
+        text-align: center;    
+    }
+    section.contactForm > div:not(:first-child){
+        /* margin-top: 80px; */
+    }
+
+    .expertise > .grid
+    {
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(110px, 1fr);
+    }
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 480px){
+    .team-tiles-item
+    {
+      flex: 1 1 50%;
+      width: 100%;
+      border: 1px solid #68dacd;
+      color: #68dacd;
+      max-width: 100%;
+    }
+}
+
+
 
