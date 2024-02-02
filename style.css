@@ -600,7 +600,92 @@ section.contactForm .clientLogos img{
 
 
 
+header .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .logo span{
+    font-size: 32px;
+    font-weight: 100;
+    color: #5dbacb;
+}
 
 
+header {
+   font-family: roboto, sans-serif; 
+}
 
+header .topnav{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+header a{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+.topnav a{
+    color: #ffffff;
+}
+
+header{
+    height: 670px;
+    background-image: url(images/bgk-header.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+
+}
+.herotext{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.headercta
+{
+  padding: 8px 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  border: 1px solid #68dacd;
+  color: #68dacd;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px; 
+
+}
+
+.watchourstory{
+    height: 550px;
+    background-image: url(images/bgk-middle.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
