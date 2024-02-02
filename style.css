@@ -146,6 +146,7 @@ header .nav ul{
     column-gap: 6px;
     font-weight: 600;
     font-size: 13px;
+    flex-wrap: wrap;
 }
 
 header a{
@@ -782,7 +783,12 @@ header{
       grid-auto-rows: minmax(110px, 1fr);
     }
 
-
+    header nav > div:first-child
+    {
+      align-self: flex-start;
+      margin-top: 12px;
+      margin-left: 10px;
+    }
 
 
 }
@@ -798,6 +804,12 @@ header{
       color: #68dacd;
       max-width: 100%;
     }
+
+    header .nav li{
+        padding-top: 15px;
+    }    
+
+
 }
 
 
