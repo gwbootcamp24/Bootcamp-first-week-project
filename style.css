@@ -275,9 +275,9 @@ section.team > p{
 } */
 
 .team-tiles-item {
-    flex: 1 1 220px;
+    flex: 1 1 25%;
     width: 220px;
-
+    
     border: 1px solid #68dacd;
     color: #68dacd;
 }
