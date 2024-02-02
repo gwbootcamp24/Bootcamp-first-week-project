@@ -339,20 +339,31 @@ section.team{
     background-size: cover;
 }
 
-/* section.team > h2{
-    ;
+section.team h2{
+    color: #ffffff;
+    margin-bottom: 0px ;
 }
 
-section.team > p{
-    ;
-} */
+section.team h3{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+section.team h4{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+section.team p{
+    color: lightgrey;
+} 
 
 .team-tiles-item {
     flex: 1 1 220px;
     /* width: 220px; */
 
-    border: 1px solid #68dacd;
-    color: #68dacd;
+    border: 1px solid #7a7f7f;
+    color: #ffffff;
 }
 
 section.team .team-tiles{
@@ -368,6 +379,7 @@ section.team .team-tiles{
 }
 
 .team-tiles-item img{
+    padding: .25em 0.25em 0.5em 0.25em;
     width: 100%
 }
 
