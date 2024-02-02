@@ -325,13 +325,13 @@ section.video-banner{
 
 .expertise hr{
     width: 5em;
-    margin-bottom: 1em;
+    margin-bottom: 5em;
     margin-left: auto;
     margin-right: auto;
 }
 
 section.team{
-    aspect-ratio: 3 / 1;
+    /* aspect-ratio: 3 / 1; */
     max-width: 100%;
     text-align: center;    
     background-image: url(images/bgk-header.png);
@@ -339,31 +339,60 @@ section.team{
     background-size: cover;
 }
 
-/* section.team > h2{
-    ;
+section.team h2{
+    color: #ffffff;
+    margin-bottom: 0px ;
 }
 
-section.team > p{
-    ;
-} */
+section.team h3{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+section.team h4{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+section.team p{
+    color: lightgrey;
+} 
 
 .team-tiles-item {
-    flex: 1 1 220px;
-    width: 220px;
-
-    border: 1px solid #68dacd;
-    color: #68dacd;
+  flex: 1 1 220px;
+    /* width: 220px; */
+    margin-bottom: 5em;
+    border: 1px solid #7a7f7f;
+    color: #ffffff;
+    max-width: 46%;
 }
+
 
 section.team .team-tiles{
     max-width: 1000px;
     display: inline-flex;
     column-gap: 1em;
+    width: 100%;
+    flex-wrap: wrap;
 }
+
 
 .team-tiles-items {
     flex-direction: row;  
     
+}
+
+.team-tiles-item img{
+    padding: .25em 0.25em 0.5em 0.25em;
+    width: 100%
+}
+
+.team hr{
+    width: 5em;
+    margin-bottom: 3em;
+    margin-top: -0.5em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a.hiring{
@@ -375,6 +404,8 @@ a.hiring{
     font-weight: 500;
     text-decoration: none;
     font-size: 14px;
+    display: inline-block;
+
 }
 
 footer{
@@ -549,6 +580,14 @@ section.contactForm .clientLogos img{
     font-size: 15px;
 }
 
+@media screen and(max-width: 600px){.team-tiles-item
+    {
+      flex: 1 1 50%;
+      width: 220px;
+      border: 1px solid #68dacd;
+      color: #68dacd;
+      max-width: 46%;
+    }}
 
 
 
@@ -600,7 +639,92 @@ section.contactForm .clientLogos img{
 
 
 
+header .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .logo span{
+    font-size: 32px;
+    font-weight: 100;
+    color: #5dbacb;
+}
 
 
+header {
+   font-family: roboto, sans-serif; 
+}
 
+header .topnav{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+header a{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+.topnav a{
+    color: #ffffff;
+}
+
+header{
+    /* height: 670px; */
+    background-image: url(images/bgk-header.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+
+}
+.herotext{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.headercta
+{
+  padding: 8px 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  border: 1px solid #68dacd;
+  color: #68dacd;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px; 
+
+}
+
+.watchourstory{
+    height: 550px;
+    background-image: url(images/bgk-middle.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
