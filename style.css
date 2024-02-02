@@ -331,7 +331,7 @@ section.video-banner{
 }
 
 section.team{
-    aspect-ratio: 3 / 1;
+    /* aspect-ratio: 3 / 1; */
     max-width: 100%;
     text-align: center;    
     background-image: url(images/bgk-header.png);
@@ -349,7 +349,7 @@ section.team > p{
 
 .team-tiles-item {
     flex: 1 1 220px;
-    width: 220px;
+    /* width: 220px; */
 
     border: 1px solid #68dacd;
     color: #68dacd;
@@ -359,12 +359,18 @@ section.team .team-tiles{
     max-width: 1000px;
     display: inline-flex;
     column-gap: 1em;
+    width: 100%
 }
 
 .team-tiles-items {
     flex-direction: row;  
     
 }
+
+.team-tiles-item img{
+    width: 100%
+}
+
 
 a.hiring{
     padding: 8px 15px;
@@ -375,6 +381,8 @@ a.hiring{
     font-weight: 500;
     text-decoration: none;
     font-size: 14px;
+    display: inline-block;
+
 }
 
 footer{
@@ -643,7 +651,7 @@ header nav{
 }
 
 header{
-    height: 670px;
+    /* height: 670px; */
     background-image: url(images/bgk-header.png);
     background-repeat: no-repeat;
     background-position: center center;
